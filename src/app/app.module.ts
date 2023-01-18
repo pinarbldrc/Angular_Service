@@ -14,7 +14,9 @@ import { UiModule } from './ui/ui.module';
     AppRoutingModule,
     UiModule
   ],
-  providers: [],
+  providers: [
+    { provide: 'apiUrl', useValue:'https://webapi.angulareducation.com/api/'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

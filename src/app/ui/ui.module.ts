@@ -2,22 +2,25 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutModule } from './layout/layout.module';
 import { ComponentsModule } from './components/components.module';
-import { LoginComponent } from './login/login.component';
+import { LoginModule } from './login/login.module';
+
 
 
 
 @NgModule({
   declarations: [
-    LoginComponent
+
   ],
   imports: [
     CommonModule,
     LayoutModule,
-    ComponentsModule
+    ComponentsModule,
+    LayoutModule
   ],
   exports:[
     LayoutModule,
-    ComponentsModule
+    ComponentsModule,
+    LoginModule
   ]
 })
 export class UiModule { }
